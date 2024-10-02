@@ -1,0 +1,291 @@
+
+
+baseurl = ""
+metaDataFormat = "yaml"
+title = "DPPESDM KALBAR"
+theme = "blist"
+DefaultContentLanguage = "id"
+DefaultContentLanguageInSubdir = false
+contentDir = "content" #English"
+weight = 1
+timeout="600s"
+languageName = "Indonesia"
+[languages.id.params]
+introTitle = "Dinas PERINDAGESDM Kalimantan Barat"
+introSubtitle = "Website resmi Dinas Perindustrian Perdagangan Energi dan Sumber Daya Mineral Provinsi Kalimantan Barat"
+introPhoto = "/picture.jpg"
+logo = "/logo.png"
+name = "Top Post"
+url = "/en/blog/emoji-support/"
+weight = 4
+[params]
+domain = 'disperindagesdm.kalbarprov.go.id'
+phone = ""
+address = "Jl. Sutan Syahrir Nomor 2"
+email = "disperindag-esdm@kalbarprov.go.id"
+darkModeToggle = true
+enableSearch = true
+searchKeys = "["
+copyright = "Copyright © 2024"
+favicon = "/favicon.svg"
+ascentColor = "bg-green-100"
+frontBundle = "berita"
+frontBundle2 = "aplikasi-pendukung"
+hideMeta = false
+hideOtherLanguages = false
+toc = true
+hidePageThumbnail = false
+introTitle = "Dinas Komunikasi dan Informatika"
+introSubtitle = "Website resmi Dinas Komunikasi dan Informatika provinsi Kalimantan Barat"
+[params.comments]
+system = "giscus"
+repo = ""
+repoid = ""
+category = ""
+categoryid = ""
+mapping = ""
+strict = ""
+reactionsenabled = ""
+emitmetadata = ""
+inputposition = ""
+theme = ""
+[params.homepage.social]
+title = "Follow me"
+description = "I work on everything coding and tweet developer memes"
+[build]
+writeStats = true
+[markup]
+[markup.highlight]
+style = "dracula"
+[markup.goldmark.renderer]
+unsafe = true
+
+
+
+
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'profil'
+name = "Profil"
+url = "/profil"
+weight = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'perdagangan dalam negeri'
+name = "Perdagangan Dalam Negeri"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-perdagangan-dalam-negeri"
+weight = 2
+
+
+
+[[languages.id.menu.main]]
+identifier = 'ppln-pktn'
+name = "PPLN-PKTN"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-pengembangan-perdagangan-luar-negeri,-perlindungan-konsumen-dan-tertib-niaga"
+weight = 3
+
+
+
+[[languages.id.menu.main]]
+identifier = 'ketenagalistrikan dan pengelolaan energi'
+name = "Ketenagalistrikan dan Pengelolaan Energi"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-ketenagalistrikan-dan-pengelolaan-energi"
+weight = 4
+
+
+
+[[languages.id.menu.main]]
+identifier = 'sumber daya mineral'
+name = "Sumber Daya Mineral"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-sumber-daya-mineral"
+weight = 5
+
+
+
+[[languages.id.menu.main]]
+identifier = 'upt-psmb'
+name = "UPT-PSMB"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/unit-pelaksana-teknis-pengujian-dan-sertifikasi-mutu-barang"
+weight = 6
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'bidang'
+name = "Bidang"
+url = "/bidang"
+weight = 3
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'perdagangan dalam negeri'
+name = "Perdagangan Dalam Negeri"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-perdagangan-dalam-negeri"
+weight = 2
+
+
+
+[[languages.id.menu.main]]
+identifier = 'ppln-pktn'
+name = "PPLN-PKTN"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-pengembangan-perdagangan-luar-negeri,-perlindungan-konsumen-dan-tertib-niaga"
+weight = 3
+
+
+
+[[languages.id.menu.main]]
+identifier = 'ketenagalistrikan dan pengelolaan energi'
+name = "Ketenagalistrikan dan Pengelolaan Energi"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-ketenagalistrikan-dan-pengelolaan-energi"
+weight = 4
+
+
+
+[[languages.id.menu.main]]
+identifier = 'sumber daya mineral'
+name = "Sumber Daya Mineral"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-sumber-daya-mineral"
+weight = 5
+
+
+
+[[languages.id.menu.main]]
+identifier = 'upt-psmb'
+name = "UPT-PSMB"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/unit-pelaksana-teknis-pengujian-dan-sertifikasi-mutu-barang"
+weight = 6
+
+
+
+[[languages.id.menu.main]]
+identifier = 'aplikasi pendukung'
+name = "Aplikasi Pendukung"
+url = "/aplikasi pendukung"
+weight = 5
+
+
+
+[[languages.id.menu.main]]
+identifier = 'perindustrian'
+name = "Perindustrian"
+parent = "bidang"
+url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-perindustrian"
+weight = 1
+
+
+
+
+
+
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'produk layanan'
+name = "Produk Layanan"
+url = "/produk layanan"
+weight = 4
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'produk layanan'
+name = "Produk Layanan"
+url = "/produk layanan"
+weight = 4
+
+
+
+[[languages.id.menu.main]]
+identifier = 'agenda'
+name = "Agenda"
+url = ""
+weight = 6
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'galeri'
+name = "Galeri"
+parent = "agenda"
+url = "/galeri kegiatan"
+weight = 3
+
+
+
+
+
+[[languages.id.menu.main]]
+identifier = 'berita'
+name = "Berita"
+parent = "agenda"
+url = "/berita"
+weight = 2
+
+
+[[params.homepage.social.icons]]
+website = "youtube"
+url = "https://www.youtube.com/@dppesdmkalbar"
+
+[[params.homepage.social.icons]]
+website = "instagram"
+url = "https://www.instagram.com/disperindagesdm_kalbarprov/"
+
+
+
+
+[[params.sliders.images]]
+url = "2.png"
+extension = "png"
+
+
+[[params.sliders.images]]
+url = "Banner WEB Utama.jpeg"
+extension = "jpeg"
+
+
+[[params.sliders.images]]
+url = "Bundle Visi Misi.png"
+extension = "png"
+
+
+[[params.sliders.images]]
+url = "Untitled-1.jpg"
+extension = "jpg"

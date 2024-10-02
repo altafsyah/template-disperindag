@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" itemscope itemtype="http://schema.org/WebPage">
+  {{- partial "head.html" . -}}
+  <body
+    class="bg-white text-white relative flex flex-col min-h-screen"
+  >
+    {{- partial "header.html" . -}}
+    <main class="flex-1">{{- block "main" . }}{{- end }}</main>
+    {{- partial "footer.html" . -}}
+    <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
+  </body>
+</html>

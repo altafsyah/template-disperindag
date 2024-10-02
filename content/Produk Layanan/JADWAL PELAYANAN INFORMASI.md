@@ -1,0 +1,12 @@
+---
+author: disperindagesdm
+title: "JADWAL PELAYANAN INFORMASI"
+date: 2024-01-02 08:28:24
+---
+<p><img src="/images/jM3Ccu1VbKObI3YMgX0G.png" alt="" /></p>
+<hr class="solid tall" style="box-sizing: content-box; height: 0px; overflow: visible; margin-top: 1rem; margin-bottom: 1rem; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-image: initial; color: #666666; font-family: Roboto; font-size: 14px; background-color: #ffffff; border-color: rgba(0, 0, 0, 0.1) initial initial initial;" />
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">Pelayanan Informasi Publik di Dinas Perindustrian Perdagangan Energi dan Sumber Daya Mineral Provinsi Kalimantan Barat dibuka setiap hari kerja Senin-Jumat mulai pukul 08.00 s.d 15.00 WIB</p>
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">JANGKA WAKTU PENYELESAIAN</p>
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">Proses penyelesaian untuk memenuhi permintaan pemohon informasi publik dilakukan setelah pemohon informasi publik memenuhi persyaratan yang telah ditentukan;</p>
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">1. Waktu penyelesaian dilaksanakan paling lambat 10 (sepuluh) hari kerja sejak diterimanya permintaan, Pejabat Pengelola Informasi dan Dokumentasi (PPID) Pembantu akan menyampaikan pemberitahuan yang berisikan informasi yang diminta berada dibawah penguasaannya atau tidak. PPID pembantu dapat memperpanjang waktu paling lambat 7 (tujuh) hari kerja;</p>
+<p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">2. Penyampaian/pendistribusian/penyerahan informasi publik kepada pemohon informasi publik dilakukan secara langsung, melalui email, fax, ataupun jasa pos.</p>

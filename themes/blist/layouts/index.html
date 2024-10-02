@@ -1,0 +1,135 @@
+{{ define "main" }}
+<style>
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+<!-- Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+{{ $sliderImages := .Site.Params.sliders.images }} {{ if len $sliderImages }}
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    {{ range $sliderImages }}
+    <div class="swiper-slide">
+      <img src="sliders/{{ .url }}" alt="Slider Image" style="width: 100%" />
+    </div>
+    {{ end }}
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+{{ end }} {{ partial "sambutan.html" . }} {{/* Bagian
+Aplikasi Pendukung */}}
+<section class="w-full px-5 lg:px-10 py-10 lg:py-24 bg-gray-900 text-white">
+  <div class="wrapper">
+    {{ $frontBundle2 := .Site.Params.frontBundle2 }}
+    <h2 class="text-2xl font-bold mt-6 text-center">
+      {{ $frontBundle2 | title }}
+    </h2>
+    <div
+      class="p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+    >
+      {{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type"
+      $frontBundle2) }} {{- partial "aplikasi-pendukung.html" . -}} {{ end }}
+    </div>
+
+    {{ if ge (len (where .Site.RegularPages.ByDate.Reverse "Type"
+    $frontBundle2)) 6 }}
+    <div class="text-center mt-10">
+      <a
+        class="px-8 py-3 rounded transition-colors duration-300 bg-yellow-500 text-white font-semibold hover:bg-blue-900"
+        href="/{{$frontBundle2}}"
+      >
+        Lihat Lebih Banyak
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{$visiMisi := .GetPage "/Profil/Visi dan Misi"}} {{if $visiMisi}}
+<section class="w-full px-5 lg:px-10 py-10 lg:py-20 text-black">
+  <div class="wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center group md:gap-10">
+    <div style="min-height: 350px; max-height: 400px;" class="h-full w-full bg-red-900 rounded-lg shadow overflow-hidden relative bg-blend-overlay">
+      <img src="/tugu.jpg" class="bg-red-500 object-cover w-full h-full"/>
+      <div class="absolute top-0 left-0 w-full h-full bg-yellow-500 opacity-30 group-hover:opacity-0 transition-opacity duration-300"></div>
+    </div>
+    <div>
+      {{$contents := findRE "<p>.*?</p>" $visiMisi.Content}}
+      {{range $contents}}
+        {{$visi := .}}
+        {{if and (not (findRE "<img.*?/>" $visi)) (not (findRE "<p>&nbsp;</p>" $visi))}}
+        <h2 class="mb-5 pl-3 border-l-4  border-yellow-500 text-yellow-500 text-3xl font-semibold">Visi</h2>
+        {{$visi | safeHTML}}
+        {{end}}
+      {{end}}
+      {{ $misi := findRE "<li>.*?</li>" $visiMisi.Content }}
+      {{if $misi}}
+        <h2 class="mt-5 pl-3 border-l-4  border-yellow-500 text-yellow-500 text-3xl font-semibold">Misi</h2>
+        <ol class="mt-5 ml-5 list-disc">
+          {{range $misi}}
+            {{. | safeHTML}}
+          {{end}}
+        </ol>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+<section></section>
+{{/* Bagian Berita */}} {{ $frontBundle := .Site.Params.frontBundle | default "berita" }} {{if $frontBundle}}
+
+<section class="wrapper p-5 lg:p-10 mt-24">
+  <h2 class="text-2xl font-bold mt-6 text-center text-blue-900">
+    {{ $frontBundle | title }}
+  </h2>
+  <div
+    class="p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+  >
+    {{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type"
+    $frontBundle) }} {{- partial "blog-card.html" . -}} {{ end }}
+  </div>
+
+  {{ if ge (len (where .Site.RegularPages.ByDate.Reverse "Type" $frontBundle)) 6
+  }}
+  <div class="text-center mt-8">
+    <a
+      class="px-8 py-3 rounded transition-colors duration-300 bg-yellow-500 text-white font-semibold hover:bg-blue-900"
+      href="/{{$frontBundle}}"
+    >
+      Lihat Lebih Banyak
+    </a>
+  </div>
+  {{end}}
+</section>
+{{ end }} {{- partial "intro.html" . -}} {{ end }}

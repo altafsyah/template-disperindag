@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="wrapper mx-auto p-5 lg:p-10 text-gray-900">
+  <h1 class="text-3xl font-bold text-center">{{ .Title }}</h1>
+  {{ $type := .Type }} {{ $paginator := .Paginate .Pages.ByDate.Reverse 12 }}
+  <div
+    class="text-gray-900 wrapper p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+  >
+    {{ range $paginator.Pages }} {{ if eq $type "article" }} {{ partial
+    "blog-card.html" . }} {{ else if eq $type "kegiatan" }} {{ partial
+    "kegiatan.html" . }} {{ else if eq $type "page" }} {{ partial
+    "blog-card-2.html" . }} {{else if eq $type "aplikasi"}} {{partial
+    "aplikasi-pendukung.html" .}} {{ else if eq $type "gallery" }} {{ partial
+    "gallery.html" . }} {{ else }}
+    <!-- Tambahkan kondisi tipe konten lain jika diperlukan -->
+    Tidak terdeteksi {{ end }} {{ end }}
+  </div>
+</section>
+{{ partial "pagination.html" . }} {{ end }}

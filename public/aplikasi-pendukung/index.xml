@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aplikasi Pendukung on DPPESDM KALBAR</title>
+    <link>//localhost:1313/aplikasi-pendukung/</link>
+    <description>Recent content in Aplikasi Pendukung on DPPESDM KALBAR</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Tue, 23 Jan 2024 03:23:55 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/aplikasi-pendukung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WEBSITE PROVINSI KALIMANTAN BARAT</title>
+      <link>//localhost:1313/aplikasi-pendukung/website-provinsi-kalimantan-barat/</link>
+      <pubDate>Tue, 23 Jan 2024 03:23:55 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/website-provinsi-kalimantan-barat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DPM-PTSP KALBAR</title>
+      <link>//localhost:1313/aplikasi-pendukung/dpm-ptsp-kalbar/</link>
+      <pubDate>Mon, 08 Jan 2024 01:49:28 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/dpm-ptsp-kalbar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LPSE PROVINSI KALBAR</title>
+      <link>//localhost:1313/aplikasi-pendukung/lpse-provinsi-kalbar/</link>
+      <pubDate>Mon, 08 Jan 2024 01:47:48 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/lpse-provinsi-kalbar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LAPOR</title>
+      <link>//localhost:1313/aplikasi-pendukung/lapor/</link>
+      <pubDate>Mon, 08 Jan 2024 01:44:27 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/lapor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PPID KALBAR</title>
+      <link>//localhost:1313/aplikasi-pendukung/ppid-kalbar/</link>
+      <pubDate>Mon, 08 Jan 2024 01:43:03 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/ppid-kalbar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SIKEDIP (SISTEM KELOLA DAFTAR INFORMASI PUBLIK)</title>
+      <link>//localhost:1313/aplikasi-pendukung/sikedip-sistem-kelola-daftar-informasi-publik/</link>
+      <pubDate>Mon, 08 Jan 2024 01:41:57 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/sikedip-sistem-kelola-daftar-informasi-publik/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OPEN DATA KALBAR</title>
+      <link>//localhost:1313/aplikasi-pendukung/open-data-kalbar/</link>
+      <pubDate>Mon, 08 Jan 2024 01:39:40 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/open-data-kalbar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SIBAPOK KALBAR</title>
+      <link>//localhost:1313/aplikasi-pendukung/sibapok-kalbar/</link>
+      <pubDate>Mon, 08 Jan 2024 01:31:47 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/sibapok-kalbar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SIPELOPOR KALBAR</title>
+      <link>//localhost:1313/aplikasi-pendukung/sipelopor-kalbar/</link>
+      <pubDate>Mon, 08 Jan 2024 01:27:39 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/sipelopor-kalbar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SIIDA-Sistem Informasi Industri Daerah Kalimantan Barat</title>
+      <link>//localhost:1313/aplikasi-pendukung/siida---sistem-informasi-industri-daerah-kalimantan-barat/</link>
+      <pubDate>Thu, 14 Dec 2023 07:27:43 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/siida---sistem-informasi-industri-daerah-kalimantan-barat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SIMPLE - Sistem Pelayanan Elektronik</title>
+      <link>//localhost:1313/aplikasi-pendukung/simple---sistem-pelayanan-elektronik/</link>
+      <pubDate>Wed, 08 Nov 2023 07:47:19 +0000</pubDate>
+      <guid>//localhost:1313/aplikasi-pendukung/simple---sistem-pelayanan-elektronik/</guid>
+      <description>SIMPEL - SISTEM PELAYANAN ELEKTRONIK</description>
+    </item>
+  </channel>
+</rss>

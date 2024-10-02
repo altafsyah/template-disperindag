@@ -1,0 +1,80 @@
+{{/* {{printf "%s" .Params}} */}}
+<a
+  href="{{.RelPermalink}}"
+  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+>
+  {{/* {{printf "%s" .Params}} */}}
+  <div
+    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+  >
+    <img src="{{.Params.thumbnail}}" class="w-full h-full object-cover" />
+  </div>
+  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+    <div>
+      <h2 class="font-semibold line-clamp-2">{{.Params.title}}</h2>
+      {{if .Params.description}}
+      <p class="text-sm text-gray-500 line-clamp-3">{{.Params.description}}</p>
+      {{end}}
+    </div>
+    <ul class="">
+      {{if .Params.author}}
+      <li class="flex gap-3 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-square-user"
+        >
+          <rect width="18" height="18" x="3" y="3" rx="2" />
+          <circle cx="12" cy="10" r="3" />
+          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
+        </svg>
+        <p class="text-xs">{{.Params.author}}</p>
+      </li>
+
+      {{end}} {{if .Params.date}}
+      <li class="flex gap-3 items-center mt-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-calendar-days"
+        >
+          <path d="M8 2v4" />
+          <path d="M16 2v4" />
+          <rect width="18" height="18" x="3" y="4" rx="2" />
+          <path d="M3 10h18" />
+          <path d="M8 14h.01" />
+          <path d="M12 14h.01" />
+          <path d="M16 14h.01" />
+          <path d="M8 18h.01" />
+          <path d="M12 18h.01" />
+          <path d="M16 18h.01" />
+        </svg>
+        <p class="date-published text-xs">{{.Params.date}}</p>
+      </li>
+      {{end}}
+    </ul>
+  </div>
+</a>
+
+<script>
+  var dateElements = document.getElementsByClassName("date-published");
+  for (var i = 0; i < dateElements.length; i++) {
+    var inner = new Date(dateElements[i].innerHTML);
+    const formattedDate = inner.toISOString().split("T")[0];
+    dateElements[i].innerHTML = formattedDate;
+  }
+</script>

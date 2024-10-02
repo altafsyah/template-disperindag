@@ -1,0 +1,53 @@
+{{ $content := .Page.Content}}
+{{ $anchorOpener := index (findRE `<a[^>]*>` $content 1) 0 }}
+{{ $anchorClose := index (findRE `</a>` $content 1) 0 }}
+{{ $imageContent := index (findRE `<img.*?/>` $content 1) 0}}
+{{$imageFormatted := replaceRE "<img" "<img class=\"rounded-lg shadow-sm w-full h-52 object-cover\"" $imageContent}}
+<div
+class="relative w-full text-center rounded overflow-hidden group text-white"
+style="height: 100%; min-height: 200px"
+>
+{{if and $anchorOpener $anchorClose }}
+{{$anchorOpener | safeHTML}}
+<div class="absolute left-0 top-0 w-full h-full">
+  <img
+  src="{{if .Params.thumbail}}{{.Params.thumbail}}{{else}}/images/pattern.webp{{end}}"
+  alt="{{ .Params.title }}"
+  class="rounded-lg shadow-sm w-full h-52 object-cover"
+  />
+</div>
+<div
+class="p-5 absolute left-0 top-0 w-full h-full flex justify-center items-center flex-col gap-5 bg-blue-900 group-hover:bg-blue-900 bg-opacity-70 group-hover:bg-opacity-90 transition-colors duration-200"
+>
+{{if .Params.thumbnail}}
+<div class="w-20 h-auto relative">
+  <img src="{{ .Params.thumbnail}}" class="w-full h-full object-cover" />
+</div>
+<h2>{{.Params.title}}</h2>
+{{end}}
+  </div>
+{{$anchorClose | safeHTML}}
+
+{{else}}
+
+  <a href="{{.RelPermalink}}">
+    <div class="absolute left-0 top-0 w-full h-full">
+      <img
+      src="/images/pattern.webp"
+      alt="{{ .Params.title }}"
+      class="rounded-lg shadow-sm w-full h-52 object-cover"
+      />
+    </div>
+    <div
+    class="p-5 absolute left-0 top-0 w-full h-full flex justify-center items-center flex-col gap-5 bg-blue-900 group-hover:bg-blue-900 bg-opacity-70 group-hover:bg-opacity-90 transition-colors duration-200"
+    >
+    {{if .Params.thumbnail}}
+    <div class="w-20 h-auto relative">
+      <img src="{{ .Params.thumbnail}}" class="w-full h-full object-cover" />
+    </div>
+    <h2>{{.Params.title}}</h2>
+    {{end}}
+      </div>
+    </a>
+  {{end}}
+</div>
