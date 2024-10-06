@@ -42,6 +42,8 @@
       "table",
       "tbody",
       "td",
+      "th",
+      "thead",
       "title",
       "tr",
       "ul"
@@ -128,6 +130,7 @@
       "lg:gap-8",
       "lg:grid-cols-3",
       "lg:h-full",
+      "lg:hidden",
       "lg:justify-center",
       "lg:max-h-52",
       "lg:my-8",
@@ -157,14 +160,12 @@
       "mb-2",
       "mb-5",
       "mb-8",
-      "md:block",
       "md:border-none",
       "md:flex-row",
       "md:gap-10",
       "md:gap-5",
       "md:grid-cols-2",
       "md:grid-cols-3",
-      "md:hidden",
       "md:items-center",
       "min-h-10",
       "min-h-screen",
@@ -261,7 +262,8 @@
       "z-10"
     ],
     "ids": [
-      "a"
+      "a",
+      "pusat-data"
     ]
   }
 }

@@ -1,0 +1,12 @@
+.dt-search {
+    display: flex;
+    gap: 10px;
+}
+
+.dt-search input {
+    background: none !important;
+}
+
+.dataTable thead tr th {
+    color: black !important;
+}

@@ -188,7 +188,7 @@ https://drive.google.com/file/d/1fff0hlSlL7b2dlW1fKvEj8Y3h3_NDo5Z/view?usp=shari
       </h1>
       <p>Provinsi Kalimatan Barat</p>
     </div>
-    <button class="mobile-menu-button md:hidden">
+    <button class="mobile-menu-button lg:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -209,7 +209,7 @@ https://drive.google.com/file/d/1fff0hlSlL7b2dlW1fKvEj8Y3h3_NDo5Z/view?usp=shari
 </header>
 <nav
   style="z-index: 9999"
-  class="mobile-menu w-full bg-gray-900 lg:bg-yellow-300 p-5 sticky top-0 text-white lg:text-black font-medium md:border-none lg:border-t lg:border-b border-white hidden md:block"
+  class="mobile-menu w-full bg-gray-900 lg:bg-yellow-300 p-5 sticky top-0 text-white lg:text-black font-medium md:border-none lg:border-t lg:border-b border-white hidden lg:block"
 >
   <ul
     class="container mx-auto mobile-menu left-0 w-full flex flex-col lg:flex-row justify-center md:items-center gap-4 lg:gap-6"
@@ -359,6 +359,7 @@ https://drive.google.com/file/d/1fff0hlSlL7b2dlW1fKvEj8Y3h3_NDo5Z/view?usp=shari
           <rect x="8" y="15" width="2" height="2" /></svg
         >01/02/2001
       </h5>
+      
       <h5 class="text-sm flex items-center flex-wrap">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -399,7 +400,10 @@ https://drive.google.com/file/d/1fff0hlSlL7b2dlW1fKvEj8Y3h3_NDo5Z/view?usp=shari
         </svg>
         282&nbsp;    kata
       </h5>
-       <p><img src="..//images/LAwsyqr6zUxrv4uubkwN.png" alt="" /></p>
+      
+      
+      
+      <p><img src="..//images/LAwsyqr6zUxrv4uubkwN.png" alt="" /></p>
 <p>&nbsp;</p>
 <hr class="solid tall" style="box-sizing: content-box; height: 0px; overflow: visible; margin-top: 1rem; margin-bottom: 1rem; border-right-style: initial; border-bottom-style: initial; border-left-style: initial; border-image: initial; color: #666666; font-family: Roboto; font-size: 14px; background-color: #ffffff; border-color: rgba(0, 0, 0, 0.1) initial initial initial;" />
 <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">1. Pelayanan Konsultasi/ Koordinasi</p>
@@ -462,7 +466,8 @@ https://drive.google.com/file/d/1fff0hlSlL7b2dlW1fKvEj8Y3h3_NDo5Z/view?usp=shari
 <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;"><a style="box-sizing: border-box; color: #007bff; text-decoration-line: none; background-color: transparent;" href="https://drive.google.com/file/d/1YxhW2P3E85-mEhmm0VwGaQkDCshAdV5C/view?usp=sharing">https://drive.google.com/file/d/1YxhW2P3E85-mEhmm0VwGaQkDCshAdV5C/view?usp=sharing</a></p>
 <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;">30.&nbsp;<span dir="ltr" style="box-sizing: border-box;">Rekomendasi/</span><span dir="ltr" style="box-sizing: border-box;">Pertimbangan Teknis</span><span dir="ltr" style="box-sizing: border-box;">&nbsp;</span><span dir="ltr" style="box-sizing: border-box;">Izin Pengusahaan Air Tanah</span></p>
 <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-family: Roboto; font-size: 14px; line-height: 1.8; color: #666666; background-color: #ffffff;"><a style="box-sizing: border-box; color: #007bff; text-decoration-line: none; background-color: transparent;" href="https://drive.google.com/file/d/10vnwvGdibgwzY7JDvsD9xVnZXnc_tPEI/view?usp=sharing">https://drive.google.com/file/d/10vnwvGdibgwzY7JDvsD9xVnZXnc_tPEI/view?usp=sharing</a></p>
- 
+
+      
     </article>
   </section>
   
@@ -488,6 +493,20 @@ https://drive.google.com/file/d/1fff0hlSlL7b2dlW1fKvEj8Y3h3_NDo5Z/view?usp=shari
   </section>
   
 </section>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.tailwindcss.js"></script>
+<script>
+  new DataTable("#pusat-data", {
+    layout: {
+      topStart: null,
+      topEnd: 'search',
+      bottomStart: null,
+      bottomEnd: null
+    }
+  });
+
+
+</script>
 <div class="px-2 mb-2">
   
   <script src="https://giscus.app/client.js"

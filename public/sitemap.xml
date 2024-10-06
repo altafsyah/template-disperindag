@@ -101,7 +101,13 @@
     <loc>//localhost:1313/profil/sambutan-kepala-dinas/</loc>
     <lastmod>2023-11-08T03:58:07+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/pusat-data/perencanaan/</loc>
+    <lastmod>2023-11-08T03:56:41+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/profil/profil-kepala-dinas/</loc>
+    <lastmod>2023-11-08T03:56:41+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/pusat-data/</loc>
     <lastmod>2023-11-08T03:56:41+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/profil/struktur-organisasi/</loc>
@@ -149,8 +155,6 @@
     <loc>//localhost:1313/categories/</loc>
   </url><url>
     <loc>//localhost:1313/galeri-kegiatan/</loc>
-  </url><url>
-    <loc>//localhost:1313/pusat-data/</loc>
   </url><url>
     <loc>//localhost:1313/tags/</loc>
   </url>

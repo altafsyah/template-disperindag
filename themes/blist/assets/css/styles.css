@@ -7,6 +7,8 @@
 /* Paginator */
 @import "assets/css/paginator";
 /* Tailwind's utility classes - generated based on config file */
+@import "assets/css/datatable";
+
 @import "node_modules/tailwindcss/utilities";
 
 @layer components {

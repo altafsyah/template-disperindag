@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pusat Data on DPPESDM KALBAR</title>
+    <link>//localhost:1313/pusat-data/</link>
+    <description>Recent content in Pusat Data on DPPESDM KALBAR</description>
+    <generator>Hugo</generator>
+    <language>id</language>
+    <lastBuildDate>Wed, 08 Nov 2023 03:56:41 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/pusat-data/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PERENCANAAN</title>
+      <link>//localhost:1313/pusat-data/perencanaan/</link>
+      <pubDate>Wed, 08 Nov 2023 03:56:41 +0000</pubDate>
+      <guid>//localhost:1313/pusat-data/perencanaan/</guid>
+      <description>&#xD;No&#xD;Judul File&#xD;Dokumen&#xD;Kategori&#xD;Aksi&#xD;1&#xD;DPA-DPA PPID 2024&#xD;Perencanaan&#xD;RKA-DPA&#xD;Download 2&#xD;RKA 2023&#xD;Perencanaan&#xD;RENJA&#xD;Download 3&#xD;RKA 2022&#xD;Perencanaan&#xD;RENJA&#xD;Download 4&#xD;DPA TAHUN 2023&#xD;Perencanaan&#xD;RKA DPA&#xD;Download 5&#xD;RENJA PERUBAHAN TAHUN 2022&#xD;Perencanaan&#xD;SAKIP&#xD;Download </description>
+    </item>
+  </channel>
+</rss>

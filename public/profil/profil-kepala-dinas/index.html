@@ -156,7 +156,7 @@ Sekretaris Dinas Tenaga Kerja dan Transmingrasi Prov. Kalbar">
       </h1>
       <p>Provinsi Kalimatan Barat</p>
     </div>
-    <button class="mobile-menu-button md:hidden">
+    <button class="mobile-menu-button lg:hidden">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -177,7 +177,7 @@ Sekretaris Dinas Tenaga Kerja dan Transmingrasi Prov. Kalbar">
 </header>
 <nav
   style="z-index: 9999"
-  class="mobile-menu w-full bg-gray-900 lg:bg-yellow-300 p-5 sticky top-0 text-white lg:text-black font-medium md:border-none lg:border-t lg:border-b border-white hidden md:block"
+  class="mobile-menu w-full bg-gray-900 lg:bg-yellow-300 p-5 sticky top-0 text-white lg:text-black font-medium md:border-none lg:border-t lg:border-b border-white hidden lg:block"
 >
   <ul
     class="container mx-auto mobile-menu left-0 w-full flex flex-col lg:flex-row justify-center md:items-center gap-4 lg:gap-6"
@@ -327,6 +327,7 @@ Sekretaris Dinas Tenaga Kerja dan Transmingrasi Prov. Kalbar">
           <rect x="8" y="15" width="2" height="2" /></svg
         >11/08/8011
       </h5>
+      
       <h5 class="text-sm flex items-center flex-wrap">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -367,7 +368,10 @@ Sekretaris Dinas Tenaga Kerja dan Transmingrasi Prov. Kalbar">
         </svg>
         100&nbsp;    kata
       </h5>
-       <p><img src="https://disperindagesdm.kalbarprov.app//assets/pages/04d9c6503651d941e804116495426f91.jpg" width="100%" /></p>
+      
+      
+      
+      <p><img src="https://disperindagesdm.kalbarprov.app//assets/pages/04d9c6503651d941e804116495426f91.jpg" width="100%" /></p>
 <p><strong>Data Pribadi</strong></p>
 <table border="0" cellspacing="0" cellpadding="0">
 <tbody>
@@ -421,7 +425,8 @@ Sekretaris Dinas Tenaga Kerja dan Transmingrasi Prov. Kalbar">
 <p>Asisten Perekonomian dan Pembangunan Sekda Prov. Kalbar</p>
 <p>Penjabat Sekda Prov. Kalbar</p>
 <p>Kadis Energi dan Sumber Daya Mineral Provinsi Kalimantan Barat</p>
-<p>&nbsp;</p> 
+<p>&nbsp;</p>
+      
     </article>
   </section>
   
@@ -443,6 +448,20 @@ Sekretaris Dinas Tenaga Kerja dan Transmingrasi Prov. Kalbar">
   </section>
   
 </section>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.tailwindcss.js"></script>
+<script>
+  new DataTable("#pusat-data", {
+    layout: {
+      topStart: null,
+      topEnd: 'search',
+      bottomStart: null,
+      bottomEnd: null
+    }
+  });
+
+
+</script>
 <div class="px-2 mb-2">
   
   <script src="https://giscus.app/client.js"
