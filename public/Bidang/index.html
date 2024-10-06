@@ -47,7 +47,7 @@
     .mobile-menu .relative:hover .language-dropdown {
         display: flex;
     }
-    
+
     .language-dropdown {
       margin-top: 0;
       display: none;
@@ -59,7 +59,9 @@
   href="/swiper-10.2.0/package/swiper-bundle.min.css"
 />
 
-<script src="/swiper-10.2.0/package/swiper-bundle.min.js"></script>
+<script src="/swiper-10.2.0/package/swiper-bundle.min.js">
+  initSwiper()
+</script>
 </head>
 <body
     class="bg-white text-white relative flex flex-col min-h-screen"
@@ -193,6 +195,41 @@
         
       </div>
     </li>
+       
+     
+    <li class="relative cursor-pointer">
+      <span class="language-switcher flex items-center gap-2">
+        <a>Layanan Pengaduan</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)"></path>
+        </svg>
+      </span>
+      <div
+        class="language-dropdown absolute top-full mt-2 left-0 flex-col gap-2 bg-gray-900 text-white z-10 hidden"
+      >
+        
+        <a class="px-3 py-2 hover:bg-gray-700" href="https://esdm.kalbarprov.go.id/layanan/ajukan/simple/6drvN">Form Informasi</a>
+        
+        <a class="px-3 py-2 hover:bg-gray-700" href="https://esdm.kalbarprov.go.id/layanan/ajukan/simple/ZsNMl">Form Pengaduan Konsumen</a>
+        
+        <a class="px-3 py-2 hover:bg-gray-700" href="https://esdm.kalbarprov.go.id/layanan/ajukan/simple/7VUkh">Form Pertanyaan</a>
+        
+      </div>
+    </li>
+       
+     
+    <li><a href="/pusat-data">Pusat Data</a></li>
          
   </ul>
 </nav>
@@ -206,70 +243,24 @@
       
 <a
   href="/bidang/bidang-pengembangan-perdagangan-luar-negeri-perlindungan-konsumen-dan-tertib-niaga/"
-  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+  class="w-full bg-white text-blue-900 rounded-lg overflow-hidden shadow block h-full hover:shadow-xl transition-shadow duration-200"
 >
   
   <div
-    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+    class="w-full bg-blue-400 min-h-10 max-h-32 lg:max-h-52 relative rounded overflow-hidden"
   >
     <img src="/Bidang/thumbnails/lbnA0vWehy9kjwuGO3IJ2PIpyFGoHMetL947cKZS.png" class="w-full h-full object-cover" />
+    <div
+      class="bg-gray-800 rounded-tl-none rounded-br-none rounded-tr rounded-bl-lg text-sm text-white px-3 py-1 absolute top-0 right-0"
+    >
+      <p class="date-published">2024-01-03 03:58:10 &#43;0000 UTC</p>
+    </div>
   </div>
-  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+  <div class="w-full p-5 flex flex-col justify-between gap-5">
     <div>
-      <h2 class="font-semibold line-clamp-2">Bidang Pengembangan Perdagangan Luar Negeri, Perlindungan Konsumen dan Tertib Niaga</h2>
+      <h2 class="font-semibold line-clamp-3">Bidang Pengembangan Perdagangan Luar Negeri, Perlindungan Konsumen dan Tertib Niaga</h2>
       
     </div>
-    <ul class="">
-      
-      <li class="flex gap-3 items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-square-user"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-        </svg>
-        <p class="text-xs">disperindagesdm</p>
-      </li>
-
-       
-      <li class="flex gap-3 items-center mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-calendar-days"
-        >
-          <path d="M8 2v4" />
-          <path d="M16 2v4" />
-          <rect width="18" height="18" x="3" y="4" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
-          <path d="M8 18h.01" />
-          <path d="M12 18h.01" />
-          <path d="M16 18h.01" />
-        </svg>
-        <p class="date-published text-xs">2024-01-03 03:58:10 &#43;0000 UTC</p>
-      </li>
-      
-    </ul>
   </div>
 </a>
 
@@ -284,70 +275,24 @@
     
 <a
   href="/bidang/bidang-sumber-daya-mineral/"
-  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+  class="w-full bg-white text-blue-900 rounded-lg overflow-hidden shadow block h-full hover:shadow-xl transition-shadow duration-200"
 >
   
   <div
-    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+    class="w-full bg-blue-400 min-h-10 max-h-32 lg:max-h-52 relative rounded overflow-hidden"
   >
     <img src="/Bidang/thumbnails/tvZkmBI9dJGC3yOUIbISUoPu8kSCMaGQcIEVOo5C.png" class="w-full h-full object-cover" />
+    <div
+      class="bg-gray-800 rounded-tl-none rounded-br-none rounded-tr rounded-bl-lg text-sm text-white px-3 py-1 absolute top-0 right-0"
+    >
+      <p class="date-published">2024-01-03 03:57:24 &#43;0000 UTC</p>
+    </div>
   </div>
-  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+  <div class="w-full p-5 flex flex-col justify-between gap-5">
     <div>
-      <h2 class="font-semibold line-clamp-2">Bidang Sumber Daya Mineral</h2>
+      <h2 class="font-semibold line-clamp-3">Bidang Sumber Daya Mineral</h2>
       
     </div>
-    <ul class="">
-      
-      <li class="flex gap-3 items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-square-user"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-        </svg>
-        <p class="text-xs">disperindagesdm</p>
-      </li>
-
-       
-      <li class="flex gap-3 items-center mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-calendar-days"
-        >
-          <path d="M8 2v4" />
-          <path d="M16 2v4" />
-          <rect width="18" height="18" x="3" y="4" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
-          <path d="M8 18h.01" />
-          <path d="M12 18h.01" />
-          <path d="M16 18h.01" />
-        </svg>
-        <p class="date-published text-xs">2024-01-03 03:57:24 &#43;0000 UTC</p>
-      </li>
-      
-    </ul>
   </div>
 </a>
 
@@ -362,70 +307,24 @@
     
 <a
   href="/bidang/bidang-perindustrian/"
-  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+  class="w-full bg-white text-blue-900 rounded-lg overflow-hidden shadow block h-full hover:shadow-xl transition-shadow duration-200"
 >
   
   <div
-    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+    class="w-full bg-blue-400 min-h-10 max-h-32 lg:max-h-52 relative rounded overflow-hidden"
   >
     <img src="/Bidang/thumbnails/mqbeKz3U9BVraZlfCstpKKqIEQygUmwBN9JGhqe1.png" class="w-full h-full object-cover" />
+    <div
+      class="bg-gray-800 rounded-tl-none rounded-br-none rounded-tr rounded-bl-lg text-sm text-white px-3 py-1 absolute top-0 right-0"
+    >
+      <p class="date-published">2024-01-03 02:54:40 &#43;0000 UTC</p>
+    </div>
   </div>
-  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+  <div class="w-full p-5 flex flex-col justify-between gap-5">
     <div>
-      <h2 class="font-semibold line-clamp-2">Bidang Perindustrian</h2>
+      <h2 class="font-semibold line-clamp-3">Bidang Perindustrian</h2>
       
     </div>
-    <ul class="">
-      
-      <li class="flex gap-3 items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-square-user"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-        </svg>
-        <p class="text-xs">disperindagesdm</p>
-      </li>
-
-       
-      <li class="flex gap-3 items-center mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-calendar-days"
-        >
-          <path d="M8 2v4" />
-          <path d="M16 2v4" />
-          <rect width="18" height="18" x="3" y="4" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
-          <path d="M8 18h.01" />
-          <path d="M12 18h.01" />
-          <path d="M16 18h.01" />
-        </svg>
-        <p class="date-published text-xs">2024-01-03 02:54:40 &#43;0000 UTC</p>
-      </li>
-      
-    </ul>
   </div>
 </a>
 
@@ -440,70 +339,24 @@
     
 <a
   href="/bidang/unit-pelaksana-teknis-pengujian-dan-sertifikasi-mutu-barang/"
-  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+  class="w-full bg-white text-blue-900 rounded-lg overflow-hidden shadow block h-full hover:shadow-xl transition-shadow duration-200"
 >
   
   <div
-    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+    class="w-full bg-blue-400 min-h-10 max-h-32 lg:max-h-52 relative rounded overflow-hidden"
   >
     <img src="/Bidang/thumbnails/IRTBIbxEXdzJCWXKrVpgambq6EVn94uMr4Hq63B9.png" class="w-full h-full object-cover" />
+    <div
+      class="bg-gray-800 rounded-tl-none rounded-br-none rounded-tr rounded-bl-lg text-sm text-white px-3 py-1 absolute top-0 right-0"
+    >
+      <p class="date-published">2023-11-08 03:37:50 &#43;0000 UTC</p>
+    </div>
   </div>
-  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+  <div class="w-full p-5 flex flex-col justify-between gap-5">
     <div>
-      <h2 class="font-semibold line-clamp-2">Unit Pelaksana Teknis Pengujian dan Sertifikasi Mutu Barang</h2>
+      <h2 class="font-semibold line-clamp-3">Unit Pelaksana Teknis Pengujian dan Sertifikasi Mutu Barang</h2>
       
     </div>
-    <ul class="">
-      
-      <li class="flex gap-3 items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-square-user"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-        </svg>
-        <p class="text-xs">disperindagesdm</p>
-      </li>
-
-       
-      <li class="flex gap-3 items-center mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-calendar-days"
-        >
-          <path d="M8 2v4" />
-          <path d="M16 2v4" />
-          <rect width="18" height="18" x="3" y="4" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
-          <path d="M8 18h.01" />
-          <path d="M12 18h.01" />
-          <path d="M16 18h.01" />
-        </svg>
-        <p class="date-published text-xs">2023-11-08 03:37:50 &#43;0000 UTC</p>
-      </li>
-      
-    </ul>
   </div>
 </a>
 
@@ -518,70 +371,24 @@
     
 <a
   href="/bidang/bidang-perdagangan-dalam-negeri/"
-  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+  class="w-full bg-white text-blue-900 rounded-lg overflow-hidden shadow block h-full hover:shadow-xl transition-shadow duration-200"
 >
   
   <div
-    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+    class="w-full bg-blue-400 min-h-10 max-h-32 lg:max-h-52 relative rounded overflow-hidden"
   >
     <img src="/Bidang/thumbnails/QHdMqot8kiTX39UN4J8ScOKyqJ17NQ44lH0hiAAS.png" class="w-full h-full object-cover" />
+    <div
+      class="bg-gray-800 rounded-tl-none rounded-br-none rounded-tr rounded-bl-lg text-sm text-white px-3 py-1 absolute top-0 right-0"
+    >
+      <p class="date-published">2023-11-08 03:33:18 &#43;0000 UTC</p>
+    </div>
   </div>
-  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+  <div class="w-full p-5 flex flex-col justify-between gap-5">
     <div>
-      <h2 class="font-semibold line-clamp-2">Bidang Perdagangan Dalam Negeri</h2>
+      <h2 class="font-semibold line-clamp-3">Bidang Perdagangan Dalam Negeri</h2>
       
     </div>
-    <ul class="">
-      
-      <li class="flex gap-3 items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-square-user"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-        </svg>
-        <p class="text-xs">disperindagesdm</p>
-      </li>
-
-       
-      <li class="flex gap-3 items-center mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-calendar-days"
-        >
-          <path d="M8 2v4" />
-          <path d="M16 2v4" />
-          <rect width="18" height="18" x="3" y="4" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
-          <path d="M8 18h.01" />
-          <path d="M12 18h.01" />
-          <path d="M16 18h.01" />
-        </svg>
-        <p class="date-published text-xs">2023-11-08 03:33:18 &#43;0000 UTC</p>
-      </li>
-      
-    </ul>
   </div>
 </a>
 
@@ -596,70 +403,24 @@
     
 <a
   href="/bidang/bidang-ketenagalistrikan-dan-pengelolaan-energi/"
-  class="w-full flex flex-col lg:flex-row bg-white text-blue-900 rounded-lg overflow-hidden shadow hover:shadow-xl transition-shadow duration-200"
+  class="w-full bg-white text-blue-900 rounded-lg overflow-hidden shadow block h-full hover:shadow-xl transition-shadow duration-200"
 >
   
   <div
-    class="w-full lg:w-1/2 bg-blue-400 min-h-10 max-h-32 lg:max-h-full relative rounded overflow-hidden"
+    class="w-full bg-blue-400 min-h-10 max-h-32 lg:max-h-52 relative rounded overflow-hidden"
   >
     <img src="/Bidang/thumbnails/afK3bGpZZjhVBQ3O1Kpw5hWTqamfGFn8BCpxnKMK.png" class="w-full h-full object-cover" />
+    <div
+      class="bg-gray-800 rounded-tl-none rounded-br-none rounded-tr rounded-bl-lg text-sm text-white px-3 py-1 absolute top-0 right-0"
+    >
+      <p class="date-published">2023-11-08 03:32:35 &#43;0000 UTC</p>
+    </div>
   </div>
-  <div class="w-full lg:w-1/2 p-5 flex flex-col justify-between gap-5">
+  <div class="w-full p-5 flex flex-col justify-between gap-5">
     <div>
-      <h2 class="font-semibold line-clamp-2">Bidang Ketenagalistrikan dan Pengelolaan Energi</h2>
+      <h2 class="font-semibold line-clamp-3">Bidang Ketenagalistrikan dan Pengelolaan Energi</h2>
       
     </div>
-    <ul class="">
-      
-      <li class="flex gap-3 items-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-square-user"
-        >
-          <rect width="18" height="18" x="3" y="3" rx="2" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
-        </svg>
-        <p class="text-xs">disperindagesdm</p>
-      </li>
-
-       
-      <li class="flex gap-3 items-center mt-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-calendar-days"
-        >
-          <path d="M8 2v4" />
-          <path d="M16 2v4" />
-          <rect width="18" height="18" x="3" y="4" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
-          <path d="M8 18h.01" />
-          <path d="M12 18h.01" />
-          <path d="M16 18h.01" />
-        </svg>
-        <p class="date-published text-xs">2023-11-08 03:32:35 &#43;0000 UTC</p>
-      </li>
-      
-    </ul>
   </div>
 </a>
 
@@ -672,7 +433,7 @@
   }
 </script>
   
-  </div>
+  </div>`
 </section>
 <div class="grid place-items-center mb-8 text-gray-900">
   

@@ -1,5 +1,3 @@
-
-
 baseurl = ""
 metaDataFormat = "yaml"
 title = "DPPESDM KALBAR"
@@ -60,31 +58,11 @@ style = "dracula"
 [markup.goldmark.renderer]
 unsafe = true
 
-
-
-
-
-
-
-
-
 [[languages.id.menu.main]]
 identifier = 'profil'
 name = "Profil"
 url = "/profil"
 weight = 1
-
-
-
-
-
-
-
-
-
-
-
-
 
 [[languages.id.menu.main]]
 identifier = 'perdagangan dalam negeri'
@@ -93,16 +71,12 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-perdagangan-dalam-negeri"
 weight = 2
 
-
-
 [[languages.id.menu.main]]
 identifier = 'ppln-pktn'
 name = "PPLN-PKTN"
 parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-pengembangan-perdagangan-luar-negeri,-perlindungan-konsumen-dan-tertib-niaga"
 weight = 3
-
-
 
 [[languages.id.menu.main]]
 identifier = 'ketenagalistrikan dan pengelolaan energi'
@@ -111,8 +85,6 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-ketenagalistrikan-dan-pengelolaan-energi"
 weight = 4
 
-
-
 [[languages.id.menu.main]]
 identifier = 'sumber daya mineral'
 name = "Sumber Daya Mineral"
@@ -120,18 +92,12 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-sumber-daya-mineral"
 weight = 5
 
-
-
 [[languages.id.menu.main]]
 identifier = 'upt-psmb'
 name = "UPT-PSMB"
 parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/unit-pelaksana-teknis-pengujian-dan-sertifikasi-mutu-barang"
 weight = 6
-
-
-
-
 
 [[languages.id.menu.main]]
 identifier = 'bidang'
@@ -139,18 +105,12 @@ name = "Bidang"
 url = "/bidang"
 weight = 3
 
-
-
-
-
 [[languages.id.menu.main]]
 identifier = 'perdagangan dalam negeri'
 name = "Perdagangan Dalam Negeri"
 parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-perdagangan-dalam-negeri"
 weight = 2
-
-
 
 [[languages.id.menu.main]]
 identifier = 'ppln-pktn'
@@ -159,16 +119,12 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-pengembangan-perdagangan-luar-negeri,-perlindungan-konsumen-dan-tertib-niaga"
 weight = 3
 
-
-
 [[languages.id.menu.main]]
 identifier = 'ketenagalistrikan dan pengelolaan energi'
 name = "Ketenagalistrikan dan Pengelolaan Energi"
 parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-ketenagalistrikan-dan-pengelolaan-energi"
 weight = 4
-
-
 
 [[languages.id.menu.main]]
 identifier = 'sumber daya mineral'
@@ -177,8 +133,6 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-sumber-daya-mineral"
 weight = 5
 
-
-
 [[languages.id.menu.main]]
 identifier = 'upt-psmb'
 name = "UPT-PSMB"
@@ -186,15 +140,11 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/unit-pelaksana-teknis-pengujian-dan-sertifikasi-mutu-barang"
 weight = 6
 
-
-
 [[languages.id.menu.main]]
 identifier = 'aplikasi pendukung'
 name = "Aplikasi Pendukung"
 url = "/aplikasi pendukung"
 weight = 5
-
-
 
 [[languages.id.menu.main]]
 identifier = 'perindustrian'
@@ -203,43 +153,23 @@ parent = "bidang"
 url = "https://disperindagesdm.kalbarprov.go.id/bidang/bidang-perindustrian"
 weight = 1
 
-
-
-
-
-
-
-
-
-
-
 [[languages.id.menu.main]]
 identifier = 'produk layanan'
 name = "Produk Layanan"
 url = "/produk layanan"
 weight = 4
 
-
-
-
-
 [[languages.id.menu.main]]
 identifier = 'produk layanan'
 name = "Produk Layanan"
 url = "/produk layanan"
 weight = 4
-
-
 
 [[languages.id.menu.main]]
 identifier = 'agenda'
 name = "Agenda"
 url = ""
 weight = 6
-
-
-
-
 
 [[languages.id.menu.main]]
 identifier = 'galeri'
@@ -248,10 +178,6 @@ parent = "agenda"
 url = "/galeri kegiatan"
 weight = 3
 
-
-
-
-
 [[languages.id.menu.main]]
 identifier = 'berita'
 name = "Berita"
@@ -259,6 +185,38 @@ parent = "agenda"
 url = "/berita"
 weight = 2
 
+[[languages.id.menu.main]]
+identifier = 'layanan pengaduan'
+name = 'Layanan Pengaduan'
+url = ''
+weight = 6
+
+[[languages.id.menu.main]]
+identifier = 'form pengaduan konsumen'
+name = 'Form Pengaduan Konsumen'
+parent = 'layanan pengaduan'
+url = 'https://esdm.kalbarprov.go.id/layanan/ajukan/simple/ZsNMl'
+weight = 2
+
+[[languages.id.menu.main]]
+identifier = 'form pertanyaan'
+name = 'Form Pertanyaan'
+parent = 'layanan pengaduan'
+url = 'https://esdm.kalbarprov.go.id/layanan/ajukan/simple/7VUkh'
+weight = 2
+
+[[languages.id.menu.main]]
+identifier = 'form informasi'
+name = 'Form Informasi'
+parent = 'layanan pengaduan'
+url = 'https://esdm.kalbarprov.go.id/layanan/ajukan/simple/6drvN'
+weight = 2
+
+[[languages.id.menu.main]]
+identifier = 'pusat data'
+name = 'Pusat Data'
+url = '/pusat-data'
+weight = 8
 
 [[params.homepage.social.icons]]
 website = "youtube"
@@ -268,23 +226,17 @@ url = "https://www.youtube.com/@dppesdmkalbar"
 website = "instagram"
 url = "https://www.instagram.com/disperindagesdm_kalbarprov/"
 
-
-
-
 [[params.sliders.images]]
 url = "2.png"
 extension = "png"
-
 
 [[params.sliders.images]]
 url = "Banner WEB Utama.jpeg"
 extension = "jpeg"
 
-
 [[params.sliders.images]]
 url = "Bundle Visi Misi.png"
 extension = "png"
-
 
 [[params.sliders.images]]
 url = "Untitled-1.jpg"

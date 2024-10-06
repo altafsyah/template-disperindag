@@ -14,7 +14,7 @@
   {{- if .Params.Author }}
   <meta name="author" content="{{ .Params.Author}}" />
   {{ end -}}
-  
+
   {{ hugo.Generator }}
 
   {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
@@ -77,7 +77,7 @@
     .mobile-menu .relative:hover .language-dropdown {
         display: flex;
     }
-    
+
     .language-dropdown {
       margin-top: 0;
       display: none;
@@ -89,5 +89,7 @@
   href="{{ "swiper-10.2.0/package/swiper-bundle.min.css" | relURL }}"
 />
 
-<script src="{{ "swiper-10.2.0/package/swiper-bundle.min.js" | relURL }}"></script>
+<script src="{{ "swiper-10.2.0/package/swiper-bundle.min.js" | relURL }}">
+  initSwiper()
+</script>
 </head>

@@ -150,6 +150,8 @@
   </url><url>
     <loc>//localhost:1313/galeri-kegiatan/</loc>
   </url><url>
+    <loc>//localhost:1313/pusat-data/</loc>
+  </url><url>
     <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>
