@@ -11,6 +11,8 @@
   <meta name="description" content="" />
   <meta name="author" content="AWDI Dashboard" />
   <meta name="generator" content="Hugo 0.129.0">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css" />
   
 
@@ -167,9 +169,12 @@
     <li><a href="/aplikasi-pendukung">Aplikasi Pendukung</a></li>
        
      
+    <li><a href="/agenda">Agenda</a></li>
+       
+     
     <li class="relative cursor-pointer">
       <span class="language-switcher flex items-center gap-2">
-        <a>Agenda</a>
+        <a>Kolase</a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="14"
@@ -271,27 +276,27 @@
   });
 
   function adjustGridVisibility() {
-    const grid = document.querySelector('.responsive-grid');
-    const items = grid.querySelectorAll('.grid-item');
+    const grid = document.querySelector(".responsive-grid");
+    const items = grid.querySelectorAll(".grid-item");
     const width = window.innerWidth;
 
     items.forEach((item, index) => {
       if (width <= 576 && index > 0) {
-        item.style.display = 'none';
+        item.style.display = "none";
       } else if (width <= 768 && index > 1) {
-        item.style.display = 'none';
+        item.style.display = "none";
       } else if (width <= 992 && index > 2) {
-        item.style.display = 'none';
+        item.style.display = "none";
       } else if (width <= 1200 && index > 3) {
-        item.style.display = 'none';
+        item.style.display = "none";
       } else {
-        item.style.display = '';
+        item.style.display = "";
       }
     });
   }
 
-  window.addEventListener('resize', adjustGridVisibility);
-  window.addEventListener('load', adjustGridVisibility);
+  window.addEventListener("resize", adjustGridVisibility);
+  window.addEventListener("load", adjustGridVisibility);
 </script>
 
  
@@ -326,7 +331,7 @@
     Berita
   </h2>
   <div class="responsive-grid mt-10 p-3">
-  
+    
     <div class="grid-item">
 <a
   href="/berita/testing/"
@@ -558,7 +563,7 @@
 
 
 
-<section class="w-full bg-white text-gray-900 p-5 lg:p-10">
+<section class="w-full bg-gray-900 text-white p-5 lg:p-10">
 
 <div class="wrapper h-fit flex flex-col md:flex-row justify-center gap-5 md:gap-10 items-center">
     
@@ -639,14 +644,48 @@
         
         
     </div>
-    <a href="/profil/sambutan-kepala-dinas/">Selengkapnya</a>
+    <a href="/profil/sambutan-kepala-dinas/" style="width: fit-content;" class="block px-3 py-1 bg-yellow-500 text-white mt-5 rounded">Selengkapnya</a>
   </div>
 </div>
 </section>
 
 
- 
-<section class="w-full px-5 lg:px-10 py-10 lg:py-24 bg-gray-900 text-white">
+  
+<section class="w-full px-5 lg:px-10 py-10 lg:py-20 text-black">
+  <div
+    class="wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center group md:gap-10"
+  >
+    <div
+      style="min-height: 350px; max-height: 400px"
+      class="h-full w-full bg-red-900 rounded-lg shadow overflow-hidden relative bg-blend-overlay"
+    >
+      <img src="/tugu.jpg" class="bg-red-500 object-cover w-full h-full" />
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-yellow-500 opacity-30 group-hover:opacity-0 transition-opacity duration-300"
+      ></div>
+    </div>
+    <div>
+            
+      <h2
+        class="mb-5 pl-3 border-l-4 border-yellow-500 text-yellow-500 text-3xl font-semibold"
+      >
+        Visi
+      </h2>
+      <p>Terwujudnya Kesejahteraan Masyarakat Kalimantan Barat Melalui Percepatan Pembangunan Infrastruktur Dan Perbaikan Tata Kelola Pemerintahan</p>          
+      <h2
+        class="mt-5 pl-3 border-l-4 border-yellow-500 text-yellow-500 text-3xl font-semibold"
+      >
+        Misi
+      </h2>
+      <ol class="mt-5 ml-5 list-disc">
+         <li>Mewujudkan percepatan pembangunan infrastruktur.</li>  <li>Mewujudkan tata kelola pemerintahan berkualitas dengan prinsip-prinsip Good Governance</li>  <li>Mewujudkan masyarakat yang sehat, cerdas, produktif, dan inovatif</li>  <li>Mewujudkan masyarakat sejahtera</li>  <li>Mewujudkan masyarakat yang tertib</li>  <li>Mewujudkan pembangunan berwawasan lingkungan</li> 
+      </ol>
+      
+    </div>
+  </div>
+</section>
+
+<section class="w-full px-5 lg:px-10 py-10 lg:py-24 text-gray-900 bg-white">
   <div class="wrapper">
     
     <h2 class="text-2xl font-bold mt-6 text-center">
@@ -862,42 +901,36 @@ class="p-5 absolute left-0 top-0 w-full h-full flex justify-center items-center 
     
   </div>
 </section>
- 
-<section class="w-full px-5 lg:px-10 py-10 lg:py-20 text-black">
-  <div
-    class="wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center group md:gap-10"
-  >
-    <div
-      style="min-height: 350px; max-height: 400px"
-      class="h-full w-full bg-red-900 rounded-lg shadow overflow-hidden relative bg-blend-overlay"
-    >
-      <img src="/tugu.jpg" class="bg-red-500 object-cover w-full h-full" />
-      <div
-        class="absolute top-0 left-0 w-full h-full bg-yellow-500 opacity-30 group-hover:opacity-0 transition-opacity duration-300"
-      ></div>
+
+<section class="w-full px-5 lg:px-10 py-10 lg:py-24 text-gray-900 bg-white">
+  <div class="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="bg-light-gray rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div class="p-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-800">Conference XYZ</h2>
+        <p class="text-gray-600 mb-4"><i class="far fa-calendar-alt mr-2"></i>May 15, 2023</p>
+        <p class="text-gray-600 mb-4"><i class="far fa-clock mr-2"></i>9:00 AM - 5:00 PM</p>
+        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>Convention Center</p>
     </div>
-    <div>
-        
-        
-      
-      <h2
-        class="mb-5 pl-3 border-l-4 border-yellow-500 text-yellow-500 text-3xl font-semibold"
-      >
-        Visi
-      </h2>
-      <p>Terwujudnya Kesejahteraan Masyarakat Kalimantan Barat Melalui Percepatan Pembangunan Infrastruktur Dan Perbaikan Tata Kelola Pemerintahan</p>   
-        
-         
-      <h2
-        class="mt-5 pl-3 border-l-4 border-yellow-500 text-yellow-500 text-3xl font-semibold"
-      >
-        Misi
-      </h2>
-      <ol class="mt-5 ml-5 list-disc">
-         <li>Mewujudkan percepatan pembangunan infrastruktur.</li>  <li>Mewujudkan tata kelola pemerintahan berkualitas dengan prinsip-prinsip Good Governance</li>  <li>Mewujudkan masyarakat yang sehat, cerdas, produktif, dan inovatif</li>  <li>Mewujudkan masyarakat sejahtera</li>  <li>Mewujudkan masyarakat yang tertib</li>  <li>Mewujudkan pembangunan berwawasan lingkungan</li> 
-      </ol>
-      
+</div>
+
+    <div class="bg-light-gray rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div class="p-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-800">Conference XYZ</h2>
+        <p class="text-gray-600 mb-4"><i class="far fa-calendar-alt mr-2"></i>May 15, 2023</p>
+        <p class="text-gray-600 mb-4"><i class="far fa-clock mr-2"></i>9:00 AM - 5:00 PM</p>
+        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>Convention Center</p>
     </div>
+</div>
+
+    <div class="bg-light-gray rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+    <div class="p-6">
+        <h2 class="text-xl font-semibold mb-2 text-gray-800">Conference XYZ</h2>
+        <p class="text-gray-600 mb-4"><i class="far fa-calendar-alt mr-2"></i>May 15, 2023</p>
+        <p class="text-gray-600 mb-4"><i class="far fa-clock mr-2"></i>9:00 AM - 5:00 PM</p>
+        <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-2"></i>Convention Center</p>
+    </div>
+</div>
+
   </div>
 </section>
 

@@ -10,7 +10,7 @@
     "kegiatan.html" . }} {{ else if or (eq $type "page") (eq $type "table") }} {{ partial
     "blog-card-2.html" . }} {{else if eq $type "aplikasi"}} {{partial
     "aplikasi-pendukung.html" .}} {{ else if eq $type "gallery" }} {{ partial
-    "gallery.html" . }} {{ else }}
+    "gallery.html" . }} {{ else if eq $type "event" }} {{ partial "event.html" . }} {{ else }}
     <!-- Tambahkan kondisi tipe konten lain jika diperlukan -->
     Tidak terdeteksi {{ end }} {{ end }}
   </div>`

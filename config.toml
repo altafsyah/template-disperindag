@@ -168,20 +168,26 @@ weight = 4
 [[languages.id.menu.main]]
 identifier = 'agenda'
 name = "Agenda"
+url = "/agenda"
+weight = 6
+
+[[languages.id.menu.main]]
+identifier = 'kolase'
+name = "Kolase"
 url = ""
 weight = 6
 
 [[languages.id.menu.main]]
 identifier = 'galeri'
 name = "Galeri"
-parent = "agenda"
+parent = "kolase"
 url = "/galeri kegiatan"
 weight = 3
 
 [[languages.id.menu.main]]
 identifier = 'berita'
 name = "Berita"
-parent = "agenda"
+parent = "kolase"
 url = "/berita"
 weight = 2
 
