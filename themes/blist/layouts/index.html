@@ -72,16 +72,16 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
 </div>
-{{ end }} {{/* Bagian Berita */}} {{ $frontBundle := .Site.Params.frontBundle |
-default "berita" }} {{if $frontBundle}}
+{{ end }}
+{{/* Bagian Berita */}} {{ $frontBundle := .Site.Params.frontBundle |default "berita" }}
+{{if $frontBundle}}
 
 <section class="p-5 lg:p-10 mt-24">
   <h2 class="text-2xl font-bold mt-6 text-center text-blue-900">
     {{ $frontBundle | title }}
   </h2>
   <div class="responsive-grid mt-10 p-3">
-    {{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type"
-    $frontBundle) }}
+    {{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type" $frontBundle) }}
     <div class="grid-item">{{- partial "blog-card.html" . -}}</div>
     {{ end }}
   </div>
@@ -95,7 +95,10 @@ default "berita" }} {{if $frontBundle}}
     </a>
   </div>
 </section>
-{{ end }} {{ partial "sambutan.html" . }} {{$visiMisi := .GetPage "/Profil/Visi dan Misi"}} {{if $visiMisi}}
+{{ end }}
+{{ partial "sambutan.html" . }}
+{{$visiMisi := .GetPage "/Profil/Visi dan Misi"}}
+{{if $visiMisi}}
 <section class="w-full px-5 lg:px-10 py-10 lg:py-20 text-black">
   <div
     class="wrapper mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center group md:gap-10"
@@ -110,7 +113,8 @@ default "berita" }} {{if $frontBundle}}
       ></div>
     </div>
     <div>
-      {{$contents := findRE "<p>.*?</p>" $visiMisi.Content}} {{range $contents}} {{$visi := .}} {{if and (not (findRE "<img.*? />" $visi)) (not (findRE "<p>&nbsp;</p>" $visi))}}
+      {{$contents := findRE "<p>.*?</p>" $visiMisi.Content}}
+      {{range $contents}} {{$visi := .}} {{if and (not(findRE "<img.*? />" $visi)) (not (findRE "<p>&nbsp;</p>" $visi))}}
       <h2
         class="mb-5 pl-3 border-l-4 border-yellow-500 text-yellow-500 text-3xl font-semibold"
       >
@@ -156,10 +160,10 @@ default "berita" }} {{if $frontBundle}}
 </section>
 
 <section class="w-full px-5 lg:px-10 py-10 lg:py-24 text-gray-900 bg-white">
+  <h2 class="text-2xl font-bold mt-6 text-center">Agenda</h2>
   <div class="wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-    {{ partial "event.html" .}}
-    {{ partial "event.html" .}}
-    {{ partial "event.html" .}}
+    {{ partial "event.html" .}} {{ partial "event.html" .}} {{ partial
+    "event.html" .}}
   </div>
 </section>
 
